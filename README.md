@@ -30,14 +30,13 @@ To design, configure, and verify the hardware modules, instruction formats, and 
 ### Step 1: Hardware Modules Setup
 *Configured the 8 registers, single-bit flags, and 4096-word RAM.*
 
-![Hardware Modules Setup](<img width="1366" height="768" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/b1b4743b-aca1-4600-8c97-e2255637d3b7" />
-)
-![Registers Configuration] (<img width="1366" height="768" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/2db68c0b-3a72-4505-a470-3f745fcff1ce" />
-)
-![Creating Registers] (<img width="1366" height="768" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/6d4522d2-80ed-456b-bee9-a922530c96a4" />)
-![RAM and flag setup] (<img width="1366" height="768" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/56ba8858-cc1e-443c-b548-d8609963f17a" />
-) (<img width="1366" height="768" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/08b0e9f3-10b4-402f-a523-b95c2c600de4" />
-)
+<img width="1366" height="768" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/b1b4743b-aca1-4600-8c97-e2255637d3b7" />
+<img width="1366" height="768" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/2db68c0b-3a72-4505-a470-3f745fcff1ce" /><img width
+
+[Creating Registers] <img width="1366" height="768" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/6d4522d2-80ed-456b-bee9-a922530c96a4" />
+[RAM and flag setup] <img width="1366" height="768" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/56ba8858-cc1e-443c-b548-d8609963f17a" />
+ <img width="1366" height="768" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/08b0e9f3-10b4-402f-a523-b95c2c600de4" />
+ 
 ---
 
 ### Step 2: Field & Instruction Formats
