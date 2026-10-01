@@ -39,33 +39,63 @@ To design, configure, and verify the hardware modules, instruction formats, and 
  
 ---
 
-### Step 2: Field & Instruction Formats
+### Step 2: Microinstructions & Instruction fields .
+Configure the low-level register-transfer operations for the machine architecture.
+
+* **Open Dialog:** Navigate to the top menu bar and choose Modify -> Microinstructions to open the execution logic window.
+* **Select Classes:** Access the Type of Microinstruction dropdown menu to choose between operational categories.
+* **Generate Fields:** Click the New button to add distinct configuration rows for TransferRtoR, Arithmetic, Logical, Shift, Increment, and MemoryAccess instruction classes.
+* **Map Operations:** Fill out the data columns for each row to define the source registers, destination registers, and bit widths.
+* **Save Configurations:** Click OK. 
+
+<img width="1366" height="734" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/8195b599-f9b2-4533-afc9-508e9f7a49fa" />
+<img width="1366" height="768" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/0bdcdf39-da2d-4d47-9d20-41fad516c368" />
+<img width="1366" height="768" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/ab43ec53-558e-4a27-b8a3-3e76a4234e04" />
+
 *Defined fields (`opcode`, `addr`, `op`) and constructed instruction formats:*
 - **Memory-Reference:** `[ opcode | addr ]` (4-bit opcode, 12-bit address)
 - **Register-Reference:** `[ op ]` (16-bit register opcode field)
+  Instruction fields
+<img width="1366" height="734" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/7c1649d3-2c3a-4c44-81bc-2ab51d2f67b2" />
+<img width="1366" height="768" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/cb5a2716-7aa3-4380-96cf-bb6443531639" />
+<img width="1366" height="768" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/0f0c9555-29ed-4ee3-953b-49139e8650d4" />
 
-![Instruction Formats]()
 
 ---
 
 ### Step 3: Machine Instructions Configuration
 *Defined all 20 instructions across Memory-Reference, Register-Reference, and I/O categories along with their respective micro-operation sequences.*
 
-![Machine Instructions Setup]()
+Machine Instructions Setup
+<img width="1366" height="713" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/60bf68c8-c166-4a02-9cab-2ebcd823193d" />
+<img width="959" height="678" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/506a9d6a-284d-4b0b-bd77-5c0cff1110af" />
+<img width="1366" height="768" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/81f2b350-de87-4218-8eec-37eeedc67d8d" />
+<img width="1366" height="768" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/094005f5-4930-4404-9888-49fe8a25bfe1" />
+<img width="1366" height="768" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/6baf0917-f7b0-42ef-8573-8a0682ea393d" />
+<img width="1366" height="768" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/34f990ac-444c-44a5-998f-c8ea25a42685" />
+<img width="1366" height="768" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/a77fec15-6c23-48c4-bde2-728b32f5700e" />
+
+
 
 ---
 
 ### Step 4: Fetch Sequence & Program Counter Configuration
-*Configured the common Fetch-Decode sequence ($AR \leftarrow PC$, $IR \leftarrow M[AR]$, $PC \leftarrow PC + 1$) and set `PC` as the main instruction counter in options.*
+*Configured the common Fetch-Decode sequence (AR<-PC, IR<- M[AR],PC<-PC + 1) and set `PC` as the main instruction counter in options.*
 
-![Fetch Sequence Setup]()
+[Fetch Sequence Setup]
+<img width="1302" height="730" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/ec5766a9-e2ab-4cb2-bc69-b1168b1c3313" />
+<img width="1366" height="717" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/0d1f160d-f46f-4ca2-846b-4d26e1c19a10" />
+
 
 ---
 
 ### Step 5: Testing & Verification
-*Tested the machine file by loading a test file (`P03_ADD.a` or basic assembly code) using `Ctrl + 2`. Verified that machine code correctly populated in the RAM window.*
+*Tested the machine file by loading a test file (basic assembly code) using `Ctrl + 2`. Verified that machine code correctly populated in the RAM window.*
+<img width="1366" height="768" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/fc089148-950b-4e4a-9a20-170ee6af7bb9" />
+[RAM Verification Output]
+<img width="1366" height="717" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/a562dd14-68fa-4fcb-aa1a-914b12490e9c" />
 
-![RAM Verification Output]()
+
 
 ---
 
