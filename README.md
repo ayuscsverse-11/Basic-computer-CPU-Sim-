@@ -101,3 +101,54 @@ Machine Instructions Setup
 
 ## Results
 The `BasicComputer.cpu` machine architecture file was successfully created with 8 hardware registers, condition bits, 4096-word RAM, fetch logic, and all 20 machine instructions. The machine structure was verified and saved.
+
+
+# Practical 2: Fetch Routine
+
+Short reference guide for the instruction cycle hardware sequence.
+
+---
+
+##  Step 1: Configure Fetch Sequence
+* Click **Modify** -> **Fetch Sequence...**
+* Drag these items to the left pane in this exact order:
+  1. `PC->AR` (from transferRtoR)
+  2. `M[AR]->IR` (from memoryAccess)
+  3. `PC+1->PC` (from increment)
+  4. `IR(0-11)->AR` (from transferRtoR)
+  5. `decode-IR` (from decode)
+* Click **OK**.
+* Click **File** -> **Save machine**.
+
+---
+
+##  Step 2: Microinstruction Parameters
+* Click **Modify** -> **Microinstructions...**
+* Locate `IR(0-11)->AR` under *TransferRtoR* and verify:
+  * **`srcStartBit`**: `0`
+  * **`destStartBit`**: `0`
+  * **`numBits`**: `12`
+
+---
+
+## Step 3: Verification Trace Table
+* Open your code file (`P1st.a`) and press **Ctrl + 2** to load it into RAM.
+* Set Registers data selector to **Unsigned Dec**.
+* Press **Ctrl + D** to enter Debug Mode.
+* Click **Step by Micro** exactly **5 times** slowly to trace the register values:
+
+| Click | Action | AR Register | PC Register | IR Register |
+| :---: | :--- | :---: | :---: | :---: |
+| **0** | Initial State | 0 | 0 | 0 |
+| **1** | `PC -> AR` | 0 | 0 | 0 |
+| **2** | `M[AR] -> IR` | 0 | 0 | 63488 |
+| **3** | `PC + 1 -> PC` | 0 | 1 | 63488 |
+| **4** | `IR(0-11) -> AR` | **2048** | 1 | 63488 |
+| **5** | `decode-IR` | 2048 | 1 | 63488 |
+
+---
+
+##  Step 4:  Screenshots
+*Fetch Sequence Configuration*
+
+*Register State Output Screen*
