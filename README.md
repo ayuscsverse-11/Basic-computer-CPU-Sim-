@@ -150,5 +150,11 @@ Short reference guide for the instruction cycle hardware sequence.
 
 ##  Step 4:  Screenshots
 *Fetch Sequence Configuration*
+<img width="1366" height="768" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/43da3e72-dcd7-4341-9607-edc00bbbe87a" />
+<img width="1366" height="768" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/a2d752f8-531d-4909-b20d-2881fe882bde" />
+<img width="1366" height="768" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/4143a441-7ded-4d40-9da1-cfb50d0030b0" />
+<img width="1366" height="768" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/c8496e2d-43a2-42a2-aa59-b04a6db3a403" />
+<img width="1366" height="768" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/148dcdf3-45ce-4a72-9ca0-223ca42718d6" />
 
 *Register State Output Screen*
+<img width="1366" height="768" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/5aa1a93b-50bd-42c6-8b8d-4ffce70704c7" />
