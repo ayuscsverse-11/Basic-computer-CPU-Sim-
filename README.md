@@ -132,7 +132,7 @@ Short reference guide for the instruction cycle hardware sequence.
 ---
 
 ## Step 3: Verification Trace Table
-* Open your code file (`P1st.a`) and press **Ctrl + 2** to load it into RAM.
+* Open code file (`P1.a`) and press **Ctrl + 2** to load it into RAM.
 * Set Registers data selector to **Unsigned Dec**.
 * Press **Ctrl + D** to enter Debug Mode.
 * Click **Step by Micro** exactly **5 times** slowly to trace the register values:
