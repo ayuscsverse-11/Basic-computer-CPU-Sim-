@@ -159,9 +159,8 @@ Short reference guide for the instruction cycle hardware sequence.
 *Register State Output Screen*
 <img width="1366" height="768" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/5aa1a93b-50bd-42c6-8b8d-4ffce70704c7" />
 
-# Computer System Architecture: CPU Sim Lab
+# Practical 3 & 4.
 
-Simulating Mano's Basic Computer in CPU Sim 4.0.11.
 
 ## How to run
 1. File → Open machine → `BasicComputer.cpu`
