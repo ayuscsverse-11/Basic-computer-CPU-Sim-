@@ -309,8 +309,10 @@ RNAND: .data 1 0
 
 
 **Screenshots**
+<img width="1366" height="768" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/ffab84dc-f0de-46f2-97d0-197c36c96395" />
+<img width="1366" height="768" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/cf8294cf-6ef9-4b21-a226-b25b84ecbb4e" />
+<img width="1366" height="768" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/6a2a45d1-46f6-45d9-a26a-3679478735f2" />
 
-(attach program and output screenshots here)
 
 **Results**
 
