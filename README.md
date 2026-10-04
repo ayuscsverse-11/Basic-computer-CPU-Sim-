@@ -367,7 +367,12 @@ PROD: .data 1 0
 | 16 | HLT | 15 | 15 | 7 | 1 |
 
 **Screenshots**
+<img width="1366" height="768" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/dca3f05a-ec83-4479-a872-ef6acb55a241" />
+<img width="1366" height="768" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/dc4f9c44-2aa8-4156-ab16-b389d64365d7" />
+<img width="1366" height="768" alt="Screenshot (62)" src="https://github.com/user-attachments/assets/0d3e5440-303a-4e1d-aaed-603c800c85db" />
+<img width="1366" height="768" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/8c818567-985d-48b8-b0ea-bad4dc2f4d24" />
 
 
 **Result:** 
 the machine halted normally.
+---
