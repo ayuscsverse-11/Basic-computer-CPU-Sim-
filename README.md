@@ -321,3 +321,53 @@ RNAND: .data 1 0
 | 12, 10 | 8 | 14 | -13 | -11 | 6 | -15 | -9 |
 | 5, 3 | 1 | 7 | -6 | -4 | 6 | -8 | -2 |
 | 255, 15 | 15 | 255 | -256 | -16 | 240 | -256 | -16 |
+
+---
+---
+
+## Practical 6: Memory-reference instructions (ADD, LDA, STA, BUN, ISZ)
+
+**Aim:** Simulate ADD, LDA, STA, BUN and ISZ by multiplying 5 × 3 using repeated addition.
+
+**Program**
+```
+LOOP: LDA PROD
+      ADD X
+      STA PROD
+      ISZ CTR
+      BUN LOOP
+      LDA PROD
+      HLT
+X:    .data 1 5
+CTR:  .data 1 -3
+PROD: .data 1 0
+```
+
+**Memory map:** `2009 1007 3009 6008 4000 2009 7001 0005 FFFD 0000`
+
+**Register trace (decimal, E = 0)**
+
+| Step | Instruction | AC | DR | PC | AR |
+|---|---|---|---|---|---|
+| 1 | LDA PROD | 0 | 0 | 1 | 9 |
+| 2 | ADD X | 5 | 5 | 2 | 7 |
+| 3 | STA PROD | 5 | 5 | 3 | 9 |
+| 4 | ISZ CTR | 5 | 65534 | 4 | 8 |
+| 5 | BUN LOOP | 5 | 65534 | 0 | 0 |
+| 6 | LDA PROD | 5 | 5 | 1 | 9 |
+| 7 | ADD X | 10 | 5 | 2 | 7 |
+| 8 | STA PROD | 10 | 5 | 3 | 9 |
+| 9 | ISZ CTR | 10 | 65535 | 4 | 8 |
+| 10 | BUN LOOP | 10 | 65535 | 0 | 0 |
+| 11 | LDA PROD | 10 | 10 | 1 | 9 |
+| 12 | ADD X | 15 | 5 | 2 | 7 |
+| 13 | STA PROD | 15 | 5 | 3 | 9 |
+| 14 | ISZ CTR | 15 | 0 | 5 | 8 |
+| 15 | LDA PROD | 15 | 15 | 6 | 9 |
+| 16 | HLT | 15 | 15 | 7 | 1 |
+
+**Screenshots**
+
+
+**Result:** 
+the machine halted normally.
