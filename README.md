@@ -250,7 +250,7 @@ DIFF: .data 1 0
 ---
 ---
 
-## Practical 5: Logical operations (AND, OR, NOT, XOR, NOR, NAND)
+# Practical 5: Logical operations (AND, OR, NOT, XOR, NOR, NAND)
 
 **Aim:** Perform six logical operations on two numbers using only `AND` and `CMA`.
 
@@ -325,7 +325,7 @@ RNAND: .data 1 0
 ---
 ---
 
-## Practical 6: Memory-reference instructions (ADD, LDA, STA, BUN, ISZ)
+# Practical 6: Memory-reference instructions (ADD, LDA, STA, BUN, ISZ)
 
 **Aim:** Simulate ADD, LDA, STA, BUN and ISZ by multiplying 5 × 3 using repeated addition.
 
