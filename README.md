@@ -191,22 +191,14 @@ SUM: .data 1 0
 
 **Memory map:** `F800 3007 F800 1007 3008 F400 7001 0000 0000`
 
-**Output screenshots** (add your images to the `screenshots` folder)
-
-
-![P3 program](screenshots/p03_program.png)
-
-
-
-
-![P3 memory](screenshots/p03_memory.png)
-
-
-
-
-![P3 output](screenshots/p03_output.png)
-
-
+**screenshots** 
+<img width="1366" height="768" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/1c8303ab-15ad-4099-bdaa-0da01e91e7d5" />
+<img width="1366" height="768" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/a7adae54-2ec8-44a0-8a27-e967adff17d5" />
+*P3 output*
+<img width="1366" height="768" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/028be0df-75ae-4143-85b1-29ab7924f1a5" />
+<img width="1366" height="768" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/5f58136b-8d4b-494e-a8ee-775952f2c0b2" />
+<img width="1366" height="768" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/dbe94e84-36a8-4fb8-9b4b-56ae93eb1d02" />
+<img width="1366" height="768" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/c978fa58-578a-47b5-a319-26ac8ad4e7d5" />
 
 | Inputs | Output |
 |---|---|
@@ -215,7 +207,6 @@ SUM: .data 1 0
 | -1, 1 | 0 |
 | 30000, 10000 | -25536 (overflow) |
 
-**Result:** 25 + 17 = 42.
 
 ---
 
@@ -242,20 +233,10 @@ DIFF: .data 1 0
 
 **Memory map:** `F800 3009 F800 7200 7020 1009 300A F400 7001 0000 0000`
 
-**Output screenshots**
-
-
-![P4 program](screenshots/p04_program.png)
-
-
-
-
-![P4 memory](screenshots/p04_memory.png)
-
-
-
-
-![P4 output](screenshots/p04_output.png)
+**screenshots**
+<img width="1366" height="768" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/dc5cb534-f1ff-4a70-9014-6680d1a46c14" />
+<img width="1366" height="768" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/52d195a9-5a21-479a-9d81-3b95706061a1" />
+<img width="1366" height="768" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/1f970023-c50f-4280-a3ea-97c8e441d53a" />
 
 
 
@@ -266,4 +247,4 @@ DIFF: .data 1 0
 | -7, -7 | 0 |
 | 0, 1 | -1 |
 
-**Result:** 18 − 50 = −32.
+---
