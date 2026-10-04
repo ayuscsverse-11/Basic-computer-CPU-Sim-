@@ -248,3 +248,74 @@ DIFF: .data 1 0
 | 0, 1 | -1 |
 
 ---
+---
+
+## Practical 5: Logical operations (AND, OR, NOT, XOR, NOR, NAND)
+
+**Aim:** Perform six logical operations on two numbers using only `AND` and `CMA`.
+
+**Program**
+```
+INP
+STA A
+INP
+STA B
+LDA A
+AND B
+STA RAND
+OUT
+LDA B
+CMA
+STA NB
+LDA A
+CMA
+STA NA
+AND NB
+CMA
+STA ROR
+OUT
+LDA NA
+OUT
+LDA NB
+OUT
+LDA RAND
+CMA
+STA RNAND
+AND ROR
+STA RXOR
+OUT
+LDA ROR
+CMA
+STA RNOR
+OUT
+LDA RNAND
+OUT
+HLT
+A:     .data 1 0
+B:     .data 1 0
+NA:    .data 1 0
+NB:    .data 1 0
+RAND:  .data 1 0
+ROR:   .data 1 0
+RXOR:  .data 1 0
+RNOR:  .data 1 0
+RNAND: .data 1 0
+```
+**Procedure**
+1. Open `BasicComputer.cpu` and the program above.
+2. Set RAM Data to Hex and press Ctrl+2 (Assemble & load).
+3. Press Ctrl+R, enter inputs 
+4. Scroll the console to read all seven outputs.
+
+
+**Screenshots**
+
+(attach program and output screenshots here)
+
+**Results**
+
+| Inputs (A, B) | AND | OR | NOT A | NOT B | XOR | NOR | NAND |
+|---|---|---|---|---|---|---|---|
+| 12, 10 | 8 | 14 | -13 | -11 | 6 | -15 | -9 |
+| 5, 3 | 1 | 7 | -6 | -4 | 6 | -8 | -2 |
+| 255, 15 | 15 | 255 | -256 | -16 | 240 | -256 | -16 |
