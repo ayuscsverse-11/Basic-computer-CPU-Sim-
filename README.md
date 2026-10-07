@@ -377,3 +377,60 @@ the machine halted normally
 <img width="1366" height="768" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/8c818567-985d-48b8-b0ea-bad4dc2f4d24" />
 
 ---
+
+# Practical 7: CLA, CMA, CME, HLT
+
+**Aim:** Simulate CLA, CMA, CME and HLT and record AC, E, PC, AR, IR.
+
+**Program** (`P07_REGISTER_REF_CLA_CMA_CME_HLT.a`):
+```
+LDA NUM
+CLA
+CMA
+CME
+HLT
+NUM: .data 1 25
+```
+
+## Steps
+1. Open CPU Sim and load `BasicComputer.cpu`, then open the program file.
+2. Press `Ctrl+2` (Assemble & load).
+3. Press `Ctrl+D` (Debug mode).
+4. Set the Registers Data selector to **Unsigned Dec**.
+5. Click **Step by Instr** 5 times, taking a screenshot after each click.
+
+**Result:** AC = 65535 (-1), E = 1, PC = 5, AR = 1, IR = 28673, S = 1
+
+## Screenshots
+| Before | After LDA | After CLA |
+|---|---|---|
+| 
+
+![](screenshots/P07/P07_step0.png)
+
+ | 
+
+![](screenshots/P07/P07_step1.png)
+
+ | 
+
+![](screenshots/P07/P07_step2.png)
+
+ |
+
+| After CMA | After CME | After HLT |
+|---|---|---|
+| 
+
+![](screenshots/P07/P07_step3.png)
+
+ | 
+
+![](screenshots/P07/P07_step4.png)
+
+ | 
+
+![](screenshots/P07/P07_step5.png)
+
+ ---
+ 
