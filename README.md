@@ -397,40 +397,14 @@ NUM: .data 1 25
 2. Press `Ctrl+2` (Assemble & load).
 3. Press `Ctrl+D` (Debug mode).
 4. Set the Registers Data selector to **Unsigned Dec**.
-5. Click **Step by Instr** 5 times, taking a screenshot after each click.
+5. Click **Step by Instr** 5 times 
 
 **Result:** AC = 65535 (-1), E = 1, PC = 5, AR = 1, IR = 28673, S = 1
 
 ## Screenshots
-| Before | After LDA | After CLA |
-|---|---|---|
-| 
+<img width="1098" height="751" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/4229faf9-f2f6-4ef9-adb7-6f6adca00f4e" />
+<img width="1366" height="768" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/9c3d8d2a-ad2e-4a4e-b7ba-3e43013a3fe1" />
 
-![](screenshots/P07/P07_step0.png)
-
- | 
-
-![](screenshots/P07/P07_step1.png)
-
- | 
-
-![](screenshots/P07/P07_step2.png)
-
- |
-
-| After CMA | After CME | After HLT |
-|---|---|---|
-| 
-
-![](screenshots/P07/P07_step3.png)
-
- | 
-
-![](screenshots/P07/P07_step4.png)
-
- | 
-
-![](screenshots/P07/P07_step5.png)
 
  ---
  
