@@ -408,3 +408,178 @@ NUM: .data 1 25
 
  ---
  
+# Practical 8: INC, SPA, SNA, SZE
+
+**Aim:** Simulate INC, SPA, SNA and SZE and record AC, E, PC, AR, IR.
+
+**Program** (`P08_REGISTER_REF_INC_SPA_SNA_SZE.a`):
+```
+LDA NUM
+INC
+SNA
+HLT
+INC
+SPA
+HLT
+SZE
+HLT
+INC
+HLT
+NUM: .data 1 -2
+```
+
+## Steps
+1. Load `BasicComputer.cpu` and open the program.
+2. `Ctrl+2` (Assemble & load), then `Ctrl+D` (Debug mode).
+3. Set Registers Data to **Unsigned Dec**.
+4. Click **Step by Instr** 8 times and take a screenshot after each click.
+
+## Screenshots
+()
+
+---
+
+# Practical 9: CIR, CIL
+
+**Aim:** Simulate CIR and CIL (circulate E and AC right/left) and record AC, E, PC, AR, IR.
+
+**Program** (`P09_REGISTER_REF_CIR_CIL.a`):
+```
+LDA NUM
+CIR
+CIR
+CIL
+CIL
+HLT
+NUM: .data 1 9
+```
+
+## Steps
+1. Load `BasicComputer.cpu` and open the program.
+2. `Ctrl+2` (Assemble & load), then `Ctrl+D` (Debug mode).
+3. Set Registers Data to **Unsigned Dec**.
+4. Click **Step by Instr** 6 times and take a screenshot after each click.
+
+## Screenshots
+[(screenshots/P09/P09_step6.png)
+
+
+**Result:** AC = 9, E = 0, PC = 6, AR = 1, IR = 28673
+
+---
+
+# Practical 10: Sum of integers until a negative number is read
+
+**Aim:** Read integers and add them until a negative number is read, then output the sum (the negative number is not included).
+
+**Program** (`P10_SUM_UNTIL_NEGATIVE.a`):
+```
+LOOP: INP
+      SPA
+      BUN DONE
+      ADD SUM
+      STA SUM
+      BUN LOOP
+DONE: LDA SUM
+      OUT
+      HLT
+SUM:  .data 1 0
+```
+
+## Steps
+1. Load `BasicComputer.cpu` and open the program.
+2. Set RAM Data to **Hex**.
+3. `Ctrl+2` (Assemble & load), then `Ctrl+R` (Run).
+4. Type `4`, `10`, `0`, `6`, then `-3`, pressing Enter after each.
+5. The console shows the output.
+
+## Screenshots
+| Step | Screenshot |
+|---|---|
+| Program in editor | 
+
+![](screenshots/P10/P10_program.png)
+
+ |
+| After Assemble & load | 
+
+![](screenshots/P10/P10_assembled.png)
+
+ |
+| Run, waiting for input | 
+
+![](screenshots/P10/P10_input.png)
+
+ |
+| Output | 
+
+![](screenshots/P10/P10_output.png)
+
+
+## Sample runs
+| Input | Output |
+|---|---|
+| 4, 10, 0, 6, -3 | 20 |
+| -5 | 0 |
+| 7, 8, -1 | 15 |
+
+---
+
+# Practical 11: Sum of integers until zero is read
+
+**Aim:** Read integers and add them until 0 is read, then output the sum.
+
+**Program** (`P11_SUM_UNTIL_ZERO.a`):
+```
+LOOP:  INP
+       SZA
+       BUN ADDIT
+       BUN DONE
+ADDIT: ADD SUM
+       STA SUM
+       BUN LOOP
+DONE:  LDA SUM
+       OUT
+       HLT
+SUM:   .data 1 0
+```
+
+## Steps
+1. Load `BasicComputer.cpu` and open the program.
+2. Set RAM Data to **Hex**.
+3. `Ctrl+2` (Assemble & load), then `Ctrl+R` (Run).
+4. Type `8`, `12`, `-5`, then `0`, pressing Enter after each.
+5. The console shows the output.
+
+## Screenshots
+| Step | Screenshot |
+|---|---|
+| Program in editor | 
+
+![](screenshots/P11/P11_program.png)
+
+ |
+| After Assemble & load | 
+
+![](screenshots/P11/P11_assembled.png)
+
+ |
+| Run, waiting for input | 
+
+![](screenshots/P11/P11_input.png)
+
+ |
+| Output | 
+
+![](screenshots/P11/P11_output.png)
+
+ |
+
+## Sample runs
+| Input | Output |
+|---|---|
+| 8, 12, -5, 0 | 15 |
+| 0 | 0 |
+| 100, 200, 300, 0 | 600 |
+
+---
