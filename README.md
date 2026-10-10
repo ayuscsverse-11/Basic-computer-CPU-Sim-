@@ -432,10 +432,12 @@ NUM: .data 1 -2
 1. Load `BasicComputer.cpu` and open the program.
 2. `Ctrl+2` (Assemble & load), then `Ctrl+D` (Debug mode).
 3. Set Registers Data to **Unsigned Dec**.
-4. Click **Step by Instr** 8 times and take a screenshot after each click.
+4. Click **Step by Instr** 8 times and see steps.
 
 ## Screenshots
-()
+<img width="1366" height="768" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/34bfb82c-66e7-4b70-a0eb-eec4cac35892" />
+<img width="1366" height="768" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/fe8b5bfc-aec1-41ab-8825-1d358f3b7353" />
+
 
 ---
 
@@ -458,13 +460,14 @@ NUM: .data 1 9
 1. Load `BasicComputer.cpu` and open the program.
 2. `Ctrl+2` (Assemble & load), then `Ctrl+D` (Debug mode).
 3. Set Registers Data to **Unsigned Dec**.
-4. Click **Step by Instr** 6 times and take a screenshot after each click.
+4. Click **Step by Instr** 6 times and take a record.
 
 ## Screenshots
-[(screenshots/P09/P09_step6.png)
+<img width="1366" height="768" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/3e0594a0-0a13-4ed8-a596-03d1a6959259" />
+<img width="1366" height="768" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/968dbeaa-c6df-4110-bd1d-b6a918e0cebd" />
+<img width="1366" height="768" alt="Screenshot (72)" src="https://github.com/user-attachments/assets/9d6ec308-0f8d-4c00-9c6c-eadf38e4d9ff" />
 
-
-**Result:** AC = 9, E = 0, PC = 6, AR = 1, IR = 28673
+Result:** AC = 9, E = 0, PC = 6, AR = 1, IR = 28673
 
 ---
 
@@ -494,27 +497,11 @@ SUM:  .data 1 0
 5. The console shows the output.
 
 ## Screenshots
-| Step | Screenshot |
-|---|---|
-| Program in editor | 
-
-![](screenshots/P10/P10_program.png)
-
- |
-| After Assemble & load | 
-
-![](screenshots/P10/P10_assembled.png)
-
- |
-| Run, waiting for input | 
-
-![](screenshots/P10/P10_input.png)
-
- |
+|Assemble,load & Run, waiting for input | 
+<img width="1366" height="768" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/01b047e8-9c0b-426c-a7ce-af3344e3bb34" />
 | Output | 
-
-![](screenshots/P10/P10_output.png)
-
+<img width="1366" height="768" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/f1d9ef50-c71b-4754-9a88-a25cbd423ab8" />
+<img width="1366" height="768" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/977536e2-648f-498b-b52d-b41c480ea7e8" />
 
 ## Sample runs
 | Input | Output |
@@ -552,28 +539,12 @@ SUM:   .data 1 0
 5. The console shows the output.
 
 ## Screenshots
-| Step | Screenshot |
-|---|---|
-| Program in editor | 
-
-![](screenshots/P11/P11_program.png)
-
- |
-| After Assemble & load | 
-
-![](screenshots/P11/P11_assembled.png)
-
- |
-| Run, waiting for input | 
-
-![](screenshots/P11/P11_input.png)
-
- |
+| After Assemble,load & run | waiting for input | 
+<img width="1366" height="768" alt="Screenshot (76)" src="https://github.com/user-attachments/assets/4f4d2b90-dc6a-4889-b3a6-e88a02b746e9" />
 | Output | 
-
-![](screenshots/P11/P11_output.png)
-
- |
+<img width="1366" height="768" alt="Screenshot (77)" src="https://github.com/user-attachments/assets/ed9a4629-da6d-4308-ace3-7c421b9e6487" />
+<img width="1366" height="768" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/25ea6cc5-ab0a-45d8-9a29-da2f421f2a77" />
+<img width="1366" height="768" alt="Screenshot (79)" src="https://github.com/user-attachments/assets/7db1699c-44e4-416f-8340-92f4a1cf5198" />
 
 ## Sample runs
 | Input | Output |
